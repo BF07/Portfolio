@@ -1,0 +1,44 @@
+$black: #201b22;
+$white: #ececec;
+$gray: #4b5e65;
+
+$cuprum: 'Cuprum', sans-serif;
+$montserrat: 'Montserrat Alternates', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: none;
+    font-family: $montserrat;
+}
+
+header {
+    background-color: $black;
+
+    .navbar-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+
+        .name {
+            text-decoration: none;
+            color: $white;
+            text-align: center;
+            margin: auto;
+            font-family: $cuprum;
+            font-size: 32px;
+        }
+
+        .nav-links {
+            padding-right: 10px;
+        }
+
+        svg {
+            width: 32px;
+        }
+    }
+}
