@@ -1,6 +1,7 @@
-$black: #201b22;
-$white: #ececec;
-$gray: #4b5e65;
+$black: #02060D;
+$white: #ebf0f2;
+$coffee: #A68D85;
+$grey: #C1C9D9;
 
 $cuprum: 'Cuprum', sans-serif;
 $montserrat: 'Montserrat Alternates', sans-serif;
@@ -14,31 +15,136 @@ $montserrat: 'Montserrat Alternates', sans-serif;
     font-family: $montserrat;
 }
 
+body {
+    background: $black;
+}
+
 header {
-    background-color: $black;
 
-    .navbar-mobile {
+    .nav-name {
+        font-family: $cuprum;
+        font-size: 24px;
+        color: $white;
+        position: fixed;
+        top: 35px;
+        left: 30px;
+    }
+
+    .nav-toggler {
+        position: fixed;
+        z-index: 10;
+        top: 30px;
+        right: 30px;
+        height: 50px;
+        width: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        width: 100%;
-        padding: 20px 0;
+        background: transparent;
 
-        .name {
-            text-decoration: none;
+        .line {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: $white;
+            transition: transform 0.3s ease-out,
+            opacity 0.1s ease-out;
+        }
+
+        .l1 {
+            transform: translateY(-10px);
+        }
+
+        .l3 {
+            transform: translateY(10px);
+        }
+    }
+
+    .nav-toggler.active .l1 {
+        transform: translateY(0px) rotate(135deg);
+    }
+
+    .nav-toggler.active .l2 {
+        opacity: 0;
+    }
+
+    .nav-toggler.active .l3 {
+        transform: translateY(0px) rotate(-135deg);
+    }
+
+    nav {
+        position: fixed;
+        width: 100vw;
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $black;
+        border-bottom: 1px solid $white;
+        transform: translateY(-100%);
+        transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    }
+
+    nav.active {
+        transform: translate(0);
+    }
+
+    nav a {
+        font-family: $cuprum;
+        color: $white;
+        font-size: 20px;
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+    }
+}
+
+main {
+    padding-top: 160px;
+
+    .presentation-wrapper {
+        padding: 10vw;
+    }
+
+    .job-title {
+        font-family: $montserrat;
+        color: $coffee;
+        font-size: 7vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 50px;
+
+        .dev {
+            text-transform: uppercase;
+            line-height: 110.5%;
+            letter-spacing: 2.5px;
+            margin-top: 15px;
+            padding-left: 30px;
             color: $white;
-            text-align: center;
-            margin: auto;
-            font-family: $cuprum;
-            font-size: 32px;
         }
+    }
 
-        .nav-links {
-            padding-right: 10px;
-        }
+    .subtitle {
+        color: $grey;
+        letter-spacing: 0.3px;
+        margin-top: 22px;
+        font-size: 20px;
 
-        svg {
-            width: 32px;
-        }
+        .salutation {
+            display: inline-block;
+            font-size: 6vw;
+            line-height: 110.5%;
+            font-weight: 600;
+            padding-bottom: 10px;
+       }
+    }
+
+    .photo {
+        display: none;
     }
 }

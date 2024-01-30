@@ -7,27 +7,116 @@
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-header {
-  background-color: #201b22;
+body {
+  background: #02060D;
 }
-header .navbar-mobile {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  padding: 20px 0;
-}
-header .navbar-mobile .name {
-  text-decoration: none;
-  color: #ececec;
-  text-align: center;
-  margin: auto;
+
+header .nav-name {
   font-family: "Cuprum", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
+  color: #ebf0f2;
+  position: fixed;
+  top: 35px;
+  left: 30px;
 }
-header .navbar-mobile .nav-links {
-  padding-right: 10px;
+header .nav-toggler {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
 }
-header .navbar-mobile svg {
-  width: 32px;
+header .nav-toggler .line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ebf0f2;
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+}
+header .nav-toggler .l1 {
+  transform: translateY(-10px);
+}
+header .nav-toggler .l3 {
+  transform: translateY(10px);
+}
+header .nav-toggler.active .l1 {
+  transform: translateY(0px) rotate(135deg);
+}
+header .nav-toggler.active .l2 {
+  opacity: 0;
+}
+header .nav-toggler.active .l3 {
+  transform: translateY(0px) rotate(-135deg);
+}
+header nav {
+  position: fixed;
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #02060D;
+  border-bottom: 1px solid #ebf0f2;
+  transform: translateY(-100%);
+  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+header nav.active {
+  transform: translate(0);
+}
+header nav a {
+  font-family: "Cuprum", sans-serif;
+  color: #ebf0f2;
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 160px;
+}
+main .presentation-wrapper {
+  padding: 10vw;
+}
+main .job-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #A68D85;
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 50px;
+}
+main .job-title .dev {
+  text-transform: uppercase;
+  line-height: 110.5%;
+  letter-spacing: 2.5px;
+  margin-top: 15px;
+  padding-left: 30px;
+  color: #ebf0f2;
+}
+main .subtitle {
+  color: #C1C9D9;
+  letter-spacing: 0.3px;
+  margin-top: 22px;
+  font-size: 20px;
+}
+main .subtitle .salutation {
+  display: inline-block;
+  font-size: 6vw;
+  line-height: 110.5%;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+main .photo {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

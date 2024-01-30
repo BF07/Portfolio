@@ -5,26 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fina Bruno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Montserrat+Alternates&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar-mobile">
-            <a href="" class="name">Fina Bruno</a>
-            <div class="nav-links">
-                <svg id="burger" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path fill="#ececec"
-                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                </svg>
-            </div>
+        <nav>
+            <a href="#">About me</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
         </nav>
+        <a href="#" class="nav-name">Fina Bruno</a>
+        <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
     </header>
+
+    <main>
+        <div class="presentation-wrapper">
+            <h1 class="job-title">
+                Fullstack <br> 
+                <span class="dev">developer</span> 
+            </h1>
+            <p class="subtitle">
+                <span class="salutation">Hi, welcome here !</span>
+                <br>
+                <span class="text-subtitle">
+                    Fina Bruno, 28 years old. A passionate young developer based on Reunion Island who likes to take his
+                    projects to the next level and make them real.
+                </span>
+            </p>
+            <img src="./images/presentation-photo.webp" alt="photo" class="photo">
+            <div class="btns-wrapper">
+                <a target="_blank" href="#" title="CV FINA Bruno">
+                    Télécharger mon CV
+                    <svg xmlns="http://www.w3.org/2000/svg" height="14" width="10.5"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ebf0f2"
+                            d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
