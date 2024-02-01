@@ -111,7 +111,7 @@ main .home .job-title .dev {
   color: #ebf0f2;
 }
 main .home .subtitle {
-  color: rgb(193, 201, 217);
+  color: #c1c9d9;
   letter-spacing: 0.3px;
   margin-top: 22px;
   font-size: 20px;
@@ -175,4 +175,58 @@ main .home .wave1 {
 main .skills {
   display: block;
   background-color: #ebf0f2;
+  overflow-x: hidden;
+}
+main .skills .skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 180vw;
+  padding: 100px 50px;
+}
+main .skills::-webkit-scrollbar {
+  width: 0;
+}
+main .about-me {
+  display: block;
+  background-color: #ebf0f2;
+}
+main .about-me .aboutme-title {
+  color: #02060d;
+  font-size: 18vw;
+  font-family: "Cuprum", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: -24vw;
+  position: relative;
+  z-index: 2;
+}
+main .about-me .wave2 {
+  position: relative;
+  z-index: 1;
+}
+main .about-me .aboutme-content {
+  background-color: #02060d;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ebf0f2;
+  padding-top: 5vw;
+}
+main .about-me .aboutme-content .aboutme-content-menu {
+  display: flex;
+  list-style: none;
+  gap: 5vw;
+  width: 100%;
+  padding-inline-start: 40px;
+}
+main .about-me .aboutme-content .aboutme-content-menu li {
+  white-space: nowrap;
+}
+main .about-me .aboutme-content .aboutme-content-menu li button {
+  background: none;
+  padding: 1vw;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 $black: #02060d;
 $white: #ebf0f2;
 $coffee: #A68D85;
-$grey: rgb(193, 201, 217);
+$grey: #c1c9d9;
 
 $cuprum: 'Cuprum', sans-serif;
 $montserrat: 'Montserrat Alternates', sans-serif;
@@ -214,7 +214,69 @@ main {
     .skills {
         display: block;
         background-color: $white;
+        overflow-x: hidden;
 
-        
+
+        .skills-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 180vw;
+            padding: 100px 50px;
+        }
+    }
+
+    .skills::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .about-me {
+        display: block;
+        background-color: $white;
+
+        .aboutme-title {
+            color: $black;
+            font-size: 18vw;
+            font-family: $cuprum;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: -24vw;
+            position: relative;
+            z-index: 2;
+        }
+
+        .wave2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .aboutme-content {
+            background-color: $black;
+            font-family: $montserrat;
+            color: $white;
+            padding-top: 5vw;
+
+            .aboutme-content-menu {
+                display: flex;
+                list-style: none;
+                gap: 5vw;
+                width: 100%;
+                padding-inline-start: 40px;
+
+                li {
+                    white-space: nowrap;
+
+                    button {
+                        background: none;
+                        padding: 1vw;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
     }
 }
