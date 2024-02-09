@@ -287,10 +287,10 @@ main .about-me .aboutme-content .aboutme-content-menu li button {
   border: none;
   color: #c1c9d9;
   padding: 1vw;
-  cursor: none;
   text-transform: uppercase;
   font-size: 20px;
   opacity: 0.4;
+  position: relative;
   z-index: 10;
 }
 main .about-me .aboutme-content .aboutme-content-menu li button:hover {
@@ -313,13 +313,15 @@ main .about-me .aboutme-content .about-me-content-text {
 main .about-me .aboutme-content .about-me-content-text .about-me-text {
   font-family: "Montserrat Alternates", sans-serif;
   color: #c1c9d9;
-  padding-top: 5vw;
-  word-spacing: 1.5vw;
-}
-main .about-me .aboutme-content .about-me-content-text .about-me-text div {
-  display: inline-flex;
-  flex-direction: row;
-  padding: 0.7vw;
+  padding: 3vw 0;
+  width: 100%;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vw;
+  margin-top: 35px;
 }
 main .about-me .aboutme-content .about-me-content-text .about-me-text span {
   color: #c1c9d9;

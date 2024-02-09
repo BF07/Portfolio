@@ -206,7 +206,7 @@ main {
                 line-height: 110.5%;
                 font-weight: 600;
                 padding-bottom: 10px;
-           }
+            }
         }
     
         .photo {
@@ -339,18 +339,17 @@ main {
                         border: none;
                         color: $grey;
                         padding: 1vw;
-                        cursor: none;
                         text-transform: uppercase;
                         font-size: 20px;
                         opacity: 0.4;
+                        position: relative;
                         z-index: 10;
-                        
+                    }
 
-                        &:hover {
-                            color: $white;
-                            opacity: 1;
-                            transition: all 0.3s ease;
-                        }
+                    button:hover {
+                        color: $white;
+                        opacity: 1;
+                        transition: all 0.3s ease;
                     }
 
                     .active {
@@ -371,14 +370,15 @@ main {
                 .about-me-text {
                     font-family: $montserrat;
                     color: $grey;
-                    padding-top: 5vw;
-                    word-spacing: 1.5vw;
-
-                    div {
-                        display: inline-flex;
-                        flex-direction: row;
-                        padding: 0.7vw;
-                    }
+                    padding: 3vw 0;
+                    width: 100%;
+                    line-height: 35px;
+                    font-size: 20px;
+                    font-weight: 300;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1.5vw;
+                    margin-top: 35px;
 
                     span {
                         color: $grey;
