@@ -14,12 +14,10 @@ window.addEventListener('scroll', () => {
     // Vérifie si l'utilisateur a atteint le bas de la section des compétences
     if (scrollTop >= skillsSection.scrollHeight && scrollDirection === 'down') {
         // Défilement horizontal vers la droite
-        skillsSection.scrollBy(4, 0); 
+        skillsSection.scrollBy(8, 0); 
     } else if (scrollTop < aboutSection.scrollHeight && scrollDirection === 'up') {
-        skillsSection.scrollBy(-4, 0);
+        skillsSection.scrollBy(-8, 0);
     }
-
-
 });
 
 
